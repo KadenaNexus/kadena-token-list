@@ -1,4 +1,6 @@
 {
   "about": "TokenGo tokens kept off the list (for example after a scam report), by contract. Add an entry with a short reason.",
-  "hidden": []
+  "hidden": [
+    { "contract": "n_f5d322747da08693718b6d25e48b087c58b40f8e.linx-test", "reason": "Linx Explore test token, no value" }
+  ]
 }
