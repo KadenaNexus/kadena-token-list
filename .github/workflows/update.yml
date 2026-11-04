@@ -1,0 +1,41 @@
+name: Update the list
+
+on:
+  schedule:
+    - cron: '17 3 * * *' # every day, 03:17 UTC
+  workflow_dispatch: {}
+  pull_request: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-list
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm test
+      - name: Rebuild from the chain
+        if: github.event_name != 'pull_request'
+        run: node scripts/build.mjs
+      - name: Commit changes
+        if: github.event_name != 'pull_request'
+        run: |
+          if [ -n "$(git status --porcelain tokens logos)" ]; then
+            git config user.name "kadena-token-list bot"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add tokens logos
+            git commit -m "Update the list from the chain"
+            git push
+          else
+            echo "No change."
+          fi
