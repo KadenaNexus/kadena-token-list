@@ -13,6 +13,8 @@ The list is **generated from the Kadena chain every day**. Nobody adds tokens by
 
 Both are served with `Access-Control-Allow-Origin: *`. Logos are PNG, at most 256 × 256 px.
 
+**Ready-made client:** [`integration/kadena-token-list.js`](integration/) (one file, no dependencies, browsers, React Native and Node) downloads and caches the list and answers `logoFor(contract)` and `get(contract)`. Examples for a wallet, a token icon API and a token picker are in [`integration/README.md`](integration/README.md).
+
 ### Format
 
 ```json
