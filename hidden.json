@@ -1,6 +1,8 @@
 {
   "about": "TokenGo tokens kept off the list (for example after a scam report), by contract. Add an entry with a short reason.",
   "hidden": [
-    { "contract": "n_f5d322747da08693718b6d25e48b087c58b40f8e.linx-test", "reason": "Linx Explore test token, no value" }
+    { "contract": "n_f5d322747da08693718b6d25e48b087c58b40f8e.linx-test", "reason": "Linx Explore test token, no value" },
+    { "contract": "n_af86b32a5a32b5b416ec6ffa5e8b32312d1ed9ed.tokengo-anchor", "reason": "TokenGo test token, no value" },
+    { "contract": "n_af86b32a5a32b5b416ec6ffa5e8b32312d1ed9ed.tokengo-reborn", "reason": "TokenGo test token, no value" }
   ]
 }
