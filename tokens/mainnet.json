@@ -3,57 +3,6 @@
   "description": "Tokens launched with TokenGo (tokengo.kadena.ws): unchanged TokenGo contracts registered by their creator. Generated from the Kadena chain every day.",
   "network": "mainnet01",
   "version": 1,
-  "count": 2,
-  "tokens": [
-    {
-      "contract": "n_af86b32a5a32b5b416ec6ffa5e8b32312d1ed9ed.tokengo-reborn",
-      "name": "TokenGo Reborn",
-      "symbol": "REBORN",
-      "decimals": 12,
-      "description": "The first token launched on the revived TokenGo. Kadena builders are back, and launching is one signature away.",
-      "logoURI": null,
-      "supplyChain": "2",
-      "chains": [
-        "2"
-      ],
-      "totalSupply": 1000,
-      "creator": "k:9715db68099f870fd6e7e5371d12a4d5b5007fc3453dd1a4ffad009aa78d0fad",
-      "launched": "2026-10-31T18:08:49.974804Z",
-      "template": "tokengo-v1",
-      "links": {},
-      "tokenPage": "https://tokengo.kadena.ws/token/n_af86b32a5a32b5b416ec6ffa5e8b32312d1ed9ed.tokengo-reborn",
-      "buyerChecks": {
-        "passed": false,
-        "lockedShare": 0,
-        "lockedUntil": null,
-        "creatorFreeShare": 1
-      }
-    },
-    {
-      "contract": "n_af86b32a5a32b5b416ec6ffa5e8b32312d1ed9ed.tokengo-anchor",
-      "name": "TokenGo Anchor",
-      "symbol": "ANCHOR",
-      "decimals": 12,
-      "description": "TokenGo anchor demo token: the first launch with locked liquidity and vesting. Not the Kadena Nexus token.",
-      "logoURI": "https://raw.githubusercontent.com/KadenaNexus/kadena-token-list/main/logos/tokengo-anchor-af86b3.png",
-      "supplyChain": "2",
-      "chains": [
-        "2"
-      ],
-      "totalSupply": 1000000,
-      "creator": "k:9715db68099f870fd6e7e5371d12a4d5b5007fc3453dd1a4ffad009aa78d0fad",
-      "launched": "2026-10-31T19:13:12.787385Z",
-      "template": "tokengo-v2",
-      "links": {
-        "website": "https://www.xxxx.com/"
-      },
-      "tokenPage": "https://tokengo.kadena.ws/token/n_af86b32a5a32b5b416ec6ffa5e8b32312d1ed9ed.tokengo-anchor",
-      "buyerChecks": {
-        "passed": false,
-        "lockedShare": 0.0516,
-        "lockedUntil": "2027-01-30T06:58:59.379571Z",
-        "creatorFreeShare": 0.7899
-      }
-    }
-  ]
+  "count": 0,
+  "tokens": []
 }
