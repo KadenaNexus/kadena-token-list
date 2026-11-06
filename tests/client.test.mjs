@@ -56,7 +56,11 @@ test('works against the real list file in this repository', async () => {
   const { readFileSync } = await import('node:fs');
   const real = JSON.parse(readFileSync(new URL('../tokens/mainnet.json', import.meta.url), 'utf8'));
   const list = createTokenList({ fetch: async () => ok(real) });
-  const anchor = await list.get('n_af86b32a5a32b5b416ec6ffa5e8b32312d1ed9ed.tokengo-anchor');
-  assert.equal(anchor.symbol, 'ANCHOR');
-  assert.match(await list.logoFor(anchor.contract), /logos\/tokengo-anchor-af86b3\.png$/);
+  // The list can be empty (every token hidden); the client must still work.
+  assert.equal((await list.all()).length, real.tokens.length);
+  for (const t of real.tokens) {
+    assert.equal((await list.get(t.contract)).symbol, t.symbol);
+    assert.equal(await list.logoFor(t.contract), t.logoURI);
+  }
+  assert.equal(await list.get('n_0000000000000000000000000000000000000000.not-listed'), null);
 });
