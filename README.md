@@ -17,6 +17,8 @@ Both are served with `Access-Control-Allow-Origin: *`. Logos are PNG, at most 25
 
 ### Format
 
+A filled-in sample in the same format, using two TokenGo test tokens, is in [`tokens/example.json`](tokens/example.json). It is for reference only; read `tokens/mainnet.json` for the real list.
+
 ```json
 {
   "name": "Kadena Token List",
