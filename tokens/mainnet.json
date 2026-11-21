@@ -3,6 +3,31 @@
   "description": "Tokens launched with TokenGo (tokengo.kadena.ws): unchanged TokenGo contracts registered by their creator. Generated from the Kadena chain every day.",
   "network": "mainnet01",
   "version": 1,
-  "count": 0,
-  "tokens": []
+  "count": 1,
+  "tokens": [
+    {
+      "contract": "n_f5d322747da08693718b6d25e48b087c58b40f8e.linx-test-3",
+      "name": "Linx test 3",
+      "symbol": "LNB",
+      "decimals": 12,
+      "description": "Testing ",
+      "logoURI": "https://raw.githubusercontent.com/KadenaNexus/kadena-token-list/main/logos/linx-test-3-f5d322.png",
+      "supplyChain": "2",
+      "chains": [
+        "2"
+      ],
+      "totalSupply": 1000000,
+      "creator": "k:f5cb898c1a34680787a0ec35ae01a45bd0e9526c010362730162c9e93a9e3436",
+      "launched": "2026-11-20T14:55:41Z",
+      "template": "tokengo-v2",
+      "links": {},
+      "tokenPage": "https://tokengo.kadena.ws/token/n_f5d322747da08693718b6d25e48b087c58b40f8e.linx-test-3",
+      "buyerChecks": {
+        "passed": false,
+        "lockedShare": 0,
+        "lockedUntil": null,
+        "creatorFreeShare": 0.6
+      }
+    }
+  ]
 }
