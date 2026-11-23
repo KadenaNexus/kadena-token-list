@@ -63,7 +63,7 @@ for (const row of rows.sort((a, b) => String(a.created).localeCompare(String(b.c
 
 const list = {
   name: 'Kadena Token List',
-  description: 'Tokens launched with TokenGo (tokengo.kadena.ws): unchanged TokenGo contracts registered by their creator. Generated from the Kadena chain every day.',
+  description: 'Tokens launched with TokenGo (tokengo.kadena.ws): unchanged TokenGo contracts registered by their creator. Generated from the Kadena chain every hour.',
   network: 'mainnet01',
   version: 1,
   count: tokens.length,

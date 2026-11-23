@@ -15,7 +15,7 @@ TypeScript types: [`kadena-token-list.d.ts`](kadena-token-list.d.ts).
 ```js
 import { createTokenList } from './kadena-token-list.js';
 
-const tokenList = createTokenList();            // refreshes once a day
+const tokenList = createTokenList();            // refreshes once an hour
 
 const token = await tokenList.get('n_af86b32a5a32b5b416ec6ffa5e8b32312d1ed9ed.tokengo-anchor');
 // { contract, name, symbol, decimals, logoURI, links, buyerChecks, ... } or null
@@ -27,7 +27,7 @@ const logo = await tokenList.logoFor(token.contract); // PNG URL or null
 - If the download fails, the client keeps using the last good copy. With no copy at all, lookups return `null`, so your app falls back to what it shows today.
 - `createTokenList({ onlyBuyerChecksPassed: true })` keeps only tokens with the TokenGo "Buyer checks passed" badge (locked liquidity, small creator share).
 
-Options: `url`, `maxAgeMs` (default 24 h), `onlyBuyerChecksPassed`, `storage` (a persistent cache with `getItem`/`setItem`), `fetch`.
+Options: `url`, `maxAgeMs` (default 1 h), `onlyBuyerChecksPassed`, `storage` (a persistent cache with `getItem`/`setItem`), `fetch`.
 
 ## Wallet (React Native)
 

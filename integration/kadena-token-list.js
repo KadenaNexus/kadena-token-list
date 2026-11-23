@@ -13,12 +13,12 @@
 // Match on the full contract name only. Names and symbols are not unique.
 
 export const LIST_URL = 'https://raw.githubusercontent.com/KadenaNexus/kadena-token-list/main/tokens/mainnet.json';
-const DAY = 24 * 3600 * 1000;
+const HOUR = 3600 * 1000;
 
 /**
  * @param {object} [options]
  * @param {string}  [options.url]                 list URL (default: the mainnet list)
- * @param {number}  [options.maxAgeMs]            refresh after this long (default 24 h)
+ * @param {number}  [options.maxAgeMs]            refresh after this long (default 1 h, as often as the list is rebuilt)
  * @param {boolean} [options.onlyBuyerChecksPassed] list only tokens with the "Buyer checks passed" badge
  * @param {{getItem(k:string):any, setItem(k:string,v:string):any}} [options.storage]
  *        optional persistent cache (localStorage, or AsyncStorage in React Native)
@@ -26,7 +26,7 @@ const DAY = 24 * 3600 * 1000;
  */
 export function createTokenList(options = {}) {
   const {
-    url = LIST_URL, maxAgeMs = DAY, onlyBuyerChecksPassed = false, storage = null,
+    url = LIST_URL, maxAgeMs = HOUR, onlyBuyerChecksPassed = false, storage = null,
     fetch: fetcher = (...a) => globalThis.fetch(...a),
   } = options;
   const KEY = `kadena-token-list:${url}`;

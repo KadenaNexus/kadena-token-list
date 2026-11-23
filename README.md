@@ -2,7 +2,7 @@
 
 A public list of tokens launched with [TokenGo](https://tokengo.kadena.ws), the no-code token launcher by Kadena Nexus, for wallets, explorers and dApps that want to show these tokens with their name and logo.
 
-The list is **generated from the Kadena chain every day**. Nobody adds tokens by hand, and there is nothing to submit: a token launched and registered with TokenGo appears here within a day.
+The list is **generated from the Kadena chain every hour**. Nobody adds tokens by hand, and there is nothing to submit: a token launched and registered with TokenGo appears here within about an hour.
 
 ## For wallets and dApps
 
@@ -66,7 +66,7 @@ Tokens reported as scams can be kept off the list in [`hidden.json`](hidden.json
 
 ## How it is built
 
-`node scripts/build.mjs` reads the registry and each contract from a public Kadena node (read-only, nothing is signed), checks it, converts the logo stored in the contract to PNG and writes `tokens/mainnet.json` and `logos/`. A GitHub Action runs it every day and commits any change. `npm test` checks the template matching and the list format.
+`node scripts/build.mjs` reads the registry and each contract from a public Kadena node (read-only, nothing is signed), checks it, converts the logo stored in the contract to PNG and writes `tokens/mainnet.json` and `logos/`. A GitHub Action runs it every hour and commits any change. `npm test` checks the template matching and the list format.
 
 ## Not an endorsement
 
