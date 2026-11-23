@@ -3,7 +3,7 @@
   "description": "Tokens launched with TokenGo (tokengo.kadena.ws): unchanged TokenGo contracts registered by their creator. Generated from the Kadena chain every hour.",
   "network": "mainnet01",
   "version": 1,
-  "count": 1,
+  "count": 2,
   "tokens": [
     {
       "contract": "n_f5d322747da08693718b6d25e48b087c58b40f8e.linx-test-3",
@@ -27,6 +27,30 @@
         "lockedShare": 0,
         "lockedUntil": null,
         "creatorFreeShare": 0.6
+      }
+    },
+    {
+      "contract": "n_49a79e44fa72f349477e55f29e8338313119fb44.abdi",
+      "name": "Abdi",
+      "symbol": "ABDI",
+      "decimals": 12,
+      "description": "Fun",
+      "logoURI": "https://raw.githubusercontent.com/KadenaNexus/kadena-token-list/main/logos/abdi-49a79e.png",
+      "supplyChain": "2",
+      "chains": [
+        "2"
+      ],
+      "totalSupply": 10000000,
+      "creator": "k:a331a55f59c53508365d1e0e09fdb793adb86be52d8a1faab008deaf6296de88",
+      "launched": "2026-11-23T09:02:22.432202Z",
+      "template": "tokengo-v2",
+      "links": {},
+      "tokenPage": "https://tokengo.kadena.ws/token/n_49a79e44fa72f349477e55f29e8338313119fb44.abdi",
+      "buyerChecks": {
+        "passed": false,
+        "lockedShare": 0.6875,
+        "lockedUntil": "2027-05-22T09:06:25Z",
+        "creatorFreeShare": 0.3173
       }
     }
   ]
