@@ -3,7 +3,7 @@
   "description": "Tokens launched with TokenGo (tokengo.kadena.ws): unchanged TokenGo contracts registered by their creator. Generated from the Kadena chain every hour.",
   "network": "mainnet01",
   "version": 1,
-  "count": 2,
+  "count": 3,
   "tokens": [
     {
       "contract": "n_f5d322747da08693718b6d25e48b087c58b40f8e.linx-test-3",
@@ -51,6 +51,30 @@
         "lockedShare": 0.6875,
         "lockedUntil": "2027-05-22T09:06:25Z",
         "creatorFreeShare": 0.3173
+      }
+    },
+    {
+      "contract": "n_9efbab7200b92420d36b21bc3b497da5bf7b5cba.pascal",
+      "name": "PASCAL",
+      "symbol": "PASCAL",
+      "decimals": 12,
+      "description": "PASCAL is a community-driven meme token inspired by Pascal and the Kadena ecosystem.  Built on Kadena, PASCAL represents the spirit of innovation, community, and the people who contribute to making blockchain technology better.  No promises. No hype. Just community, code, and Kad",
+      "logoURI": "https://raw.githubusercontent.com/KadenaNexus/kadena-token-list/main/logos/pascal-9efbab.png",
+      "supplyChain": "2",
+      "chains": [
+        "2"
+      ],
+      "totalSupply": 1000000000000,
+      "creator": "k:a2c8ad96ff0a33ebab0a38722d968fb268a962089c2ddbd2142a3a4be0b3ff87",
+      "launched": "2026-11-25T15:41:35Z",
+      "template": "tokengo-v2",
+      "links": {},
+      "tokenPage": "https://tokengo.kadena.ws/token/n_9efbab7200b92420d36b21bc3b497da5bf7b5cba.pascal",
+      "buyerChecks": {
+        "passed": false,
+        "lockedShare": 0,
+        "lockedUntil": null,
+        "creatorFreeShare": 0
       }
     }
   ]
